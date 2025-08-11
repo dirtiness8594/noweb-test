@@ -475,43 +475,42 @@
 
 .stats__item {
 
-  width: 130px;
-  height: 160px;
-  border: 1px solid #eee;
-  border-radius: 50%;
+  width: 20%;
+  height: 100%;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 10px;
+  padding: 3rem 10px;
   position: relative;
 }
 
 .stats__item::before {
   position: absolute;
-  left: -10%;
+  left: -5%;
   top: -5%;
   content: "";
-  width: 120%;
+  width: 110%;
   height: 100%;
-  border: 1px solid gray;
+  border: 1px solid #D8DDE1;
   border-radius: 50%;
   background-color: transparent;
 }
 
 .stats__number {
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 64px;
+  font-weight: 500;
   margin: 0;
 }
 
 .stats__label {
-  font-size: 14px;
-  color: #555;
+  font-size: 28px;
+
+  color: #797E88;
   margin-top: 6px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 
@@ -533,19 +532,23 @@
   text-transform: uppercase;
   display: block;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .workflow__title {
-  font-size: 32px;
-  margin-bottom: 40px;
+    font-size: 54px;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    font-family: 'Gallery Modern', serif;
 }
 
 .workflow__steps {
   display: flex;
+  padding-top: 60px;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 3rem;
 }
 
 .workflow__step {
@@ -618,12 +621,12 @@ content: "";
 
 .workflow__step-title {
   font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0;
+  font-weight: 500;
+  margin: 2rem 0;
 }
 
 .workflow__step-text {
-  font-size: 13px;
+  font-size: 12px;
   color: #666;
   line-height: 1.4;
 }
