@@ -102,6 +102,11 @@ function App() {
           <button className="navbar__quote">Get A Quote ⤴</button>
         </div>
       </nav>
+
+
+
+
+
       <section className="hero">
         <div className="hero__text">
           <p className="hero__tagline">Great Design Services<br />Without The Pretentiousness!</p>
@@ -122,9 +127,10 @@ function App() {
           </div>
           <div className="hero__reviews">
             <div className="hero__avatars">
-              <img src="avatar1.png" alt="User 1" />
-              <img src="avatar2.png" alt="User 2" />
-              <img src="avatar3.png" alt="User 3" />
+              <img src="/avatar1.png" alt="User 1" />
+              <img src="/avatar1.png" alt="User 2" />
+              <img src="/avatar1.png" alt="User 3" />
+              <span>15k+</span>
             </div>
             <span className="hero__rating">Excellent <strong>4.000+</strong> Reviews</span>
           </div>
@@ -161,13 +167,17 @@ function App() {
         </div>
 
         <div className="experience__brands">
-          <p className="experience__brands-title">We Worked With Global Largest Brands</p>
+          <div className="experience__brands-wrapper">
+            <p className="experience__brands-title">We Worked With Global Largest Brands</p>
+          </div>
+
+          {/* <p className="experience__brands-title">We Worked With Global Largest Brands</p> */}
           <div className="experience__logos">
-            <img src="logo1.png" alt="Tech Logo 1" />
-            <img src="logo2.png" alt="Technology Logo 2" />
-            <img src="logo3.png" alt="Technology Logo 3" />
-            <img src="logo4.png" alt="Technology Logo 4" />
-            <img src="logo5.png" alt="System Logo 5" />
+            <img src="/L1.png" alt="Tech Logo 1" />
+            <img src="/L2.png" alt="Technology Logo 2" />
+            <img src="/L3.png" alt="Technology Logo 3" />
+            <img src="/L4.png" alt="Technology Logo 4" />
+            <img src="/L5.png" alt="System Logo 5" />
           </div>
         </div>
       </section>
@@ -187,30 +197,36 @@ function App() {
           <div className="services__card">
             <span className="services__category">• Visual Branding</span>
             <h3 className="services__card-title">Web Design And Development</h3>
+            <div className="services__icon">
+              <img src="/I1.png" alt="" srcset="" />
+            </div>
             <p className="services__card-text">
               Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
             </p>
-            <div className="services__icon">📦</div>
             <button className="services__button">➜</button>
           </div>
 
           <div className="services__card services__card--active">
             <span className="services__category">• Brand Strategy</span>
             <h3 className="services__card-title">Branding And Creative Services</h3>
+            <div className="services__icon">
+              <img src="/I2.png" alt="" srcset="" />
+            </div>
             <p className="services__card-text">
               Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
             </p>
-            <div className="services__icon">🌀</div>
             <button className="services__button services__button--active">➜</button>
           </div>
 
           <div className="services__card">
             <span className="services__category">• Identity Build</span>
             <h3 className="services__card-title">Creative Digital Agency</h3>
+            <div className="services__icon">
+              <img src="/I3.png" alt="" srcset="" />
+            </div>
             <p className="services__card-text">
               Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
             </p>
-            <div className="services__icon">🏢</div>
             <button className="services__button">➜</button>
           </div>
         </div>
@@ -247,9 +263,12 @@ function App() {
         <div className="workflow__steps">
           <div className="workflow__step">
             <div className="workflow__icon-circle">
-              <span className="workflow__icon">🚀</span>
-            </div>
+              <span className="workflow__icon">
+                <img src="/I4.png" alt="" srcset="" />
+              </span>
+            <span className="workflow__arrow"></span>
             <span className="workflow__number">01</span>
+            </div>
             <h3 className="workflow__step-title">Research and Strategy</h3>
             <p className="workflow__step-text">
               Conduct thorough market of the research to the fast target audience behaviors.<br />
@@ -257,13 +276,16 @@ function App() {
             </p>
           </div>
 
-          <div className="workflow__arrow"></div>
+          {/* <div className="workflow__arrow"></div> */}
 
           <div className="workflow__step">
             <div className="workflow__icon-circle">
-              <span className="workflow__icon">📞</span>
-            </div>
+              <span className="workflow__icon">
+                <img src="/I5.png" alt="" srcset="" />
+              </span>
+            <span className="workflow__arrow"></span>
             <span className="workflow__number">02</span>
+            </div>
             <h3 className="workflow__step-title">Plan Customization</h3>
             <p className="workflow__step-text">
               Conduct thorough market of the research to the fast target audience behaviors.<br />
@@ -271,13 +293,16 @@ function App() {
             </p>
           </div>
 
-          <div className="workflow__arrow"></div>
+          {/* <div className="workflow__arrow"></div> */}
 
           <div className="workflow__step">
             <div className="workflow__icon-circle">
-              <span className="workflow__icon">🔁</span>
-            </div>
+              <span className="workflow__icon">
+                <img src="/I6.png" alt="" srcset="" />
+              </span>
+            <span className="workflow__arrow"></span>
             <span className="workflow__number">03</span>
+            </div>
             <h3 className="workflow__step-title">Finished & User Testing</h3>
             <p className="workflow__step-text">
               Conduct thorough market of the research to the fast target audience behaviors.<br />
