@@ -32,27 +32,23 @@ export const Difference = () => {
             alt="Meeting room"
           />
           <p className="difference__text-small">
-            Conduct thorough market research to the fast target audience
-            behaviours. Submit as many design tasks
-
+            We believe that the surest measure of success is when our partners with us more than half It's more than just the visuals. We're here to support your growth.
             <br />
             <br />
-
-            We believe that the surest measure of success is when our partners with us more than half. It's more than just the visuals. We're here to support your growth.
+            <br />
+            <br />
+            We believe that the surest measure of success is when our partners with us more than half It's more than just the visuals.
           </p>
         </div>
 
         <div className="difference__middle">
           <p className="difference__text-block">
-            We believe that the surest measure of success is when our partners
-            with us more than half. It's more than just the visuals. We're here
-            to support your growth.
+            Conduct thorough market research to the fast target audience behaviours. Submit as many design tasks
           </p>
           <div className="difference__mission">
             <h4 className="difference__mission-title">Our Mission</h4>
             <p className="difference__mission-text">
-              Conduct thorough market research to the fast target audience
-              behaviours.
+              Conduct thorough market research to the fast target audience behaviours.
             </p>
           </div>
         </div>
@@ -82,7 +78,7 @@ export const Difference = () => {
                 alt="UX/UI Solution"
                 className="difference__feature-img"
               />
-              <span className="difference__feature-label">UX/UI Solution</span>
+              <span className="difference__feature-label">UX/UI <br />Solution</span>
             </div>
           </div>
 
