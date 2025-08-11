@@ -4,7 +4,7 @@ export const Experience = () => {
             <div className="experience__content">
                 <div className="experience__intro">
                     <h2 className="experience__title">
-                        We Collaborate With A Few Disability Service Providers To Create Inclusive Goods That Meet Their Requirements.
+                        We Collaborate With A Few Disability Service<br /> Providers To Create Inclusive Goods <br />That Meet Their Requirements.
                     </h2>
                 </div>
 

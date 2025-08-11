@@ -1,17 +1,18 @@
 
 type HeaderProps = {
-  onOpenModal: () => void
+    onOpenModal: () => void
 }
 
 export const Header = ({ onOpenModal }: HeaderProps) => {
-    
+
     console.log("Xis ", onOpenModal)
-    
+
     return (
         <nav className="navbar">
             <div className="navbar__logo">
-                <span className="navbar__icon">📈</span>
-                <span className="navbar__brand">NEX</span>
+                {/* <span className="navbar__icon">📈</span>
+                <span className="navbar__brand">NEX</span> */}
+                <img src="/logo.png" alt="" />
             </div>
             <ul className="navbar__menu">
                 <li className="navbar__item navbar__item--active">Home</li>

@@ -1,37 +1,55 @@
 export const Hero = () => {
-    return (
-          <section className="hero">
-        <div className="hero__text">
-          <p className="hero__tagline">Great Design Services<br />Without The Pretentiousness!</p>
-          <h1 className="hero__title">
-            <span className="hero__title--highlight">Digital</span>{" "}
-            <span className="hero__title--normal">Solution</span>
-          </h1>
-          <p className="hero__description">
-            We believe that the surest measure of success is when our partners win.
-            More than half, it's more than just the visuals. We're here to support your growth.
-          </p>
-          <button className="hero__button">View All Services ⤴</button>
+  return (
+    <section className="hero">
+      {/* Linha 1 - Tagline */}
+      <div className="hero__tagline">
+        <p>
+          Great Design Services <br />
+          Without The Pretentiousness.!
+        </p>
+      </div>
+
+      {/* Linha 2 - Digital + Texto/Botão/Reviews */}
+      <div className="hero__row hero__row--middle">
+        <div className="hero__left">
+          <h1 className="hero__title">Digital</h1>
         </div>
-        <div className="hero__badge">
-          <div className="hero__web-design">
-            <span>WEB DESIGN</span>
-            <div className="hero__emoji">🧑‍🎤</div>
-          </div>
+        <div className="hero__right">
+          <p className="hero__description">
+            We believe that the surest measure of success is when our partners with us more than half It's more than just the visuals. We're here to support your growth.
+          </p>
+
+          <button className="hero__button">View All Services ⤴</button>
+
           <div className="hero__reviews">
             <div className="hero__avatars">
               <img src="/avatar1.png" alt="User 1" />
-              <img src="/avatar1.png" alt="User 2" />
-              <img src="/avatar1.png" alt="User 3" />
-              <span>15k+</span>
+              <img src="/avatar2.png" alt="User 2" />
+              <img src="/avatar3.png" alt="User 3" />
+              <div className="hero__avatar-count">15k+</div>
             </div>
-            <span className="hero__rating">Excellent <strong>4.000+</strong> Reviews</span>
+            <span className="hero__rating">
+              Excellent <strong>4.000+</strong> Reviews
+            </span>
           </div>
         </div>
+      </div>
 
-        <div className="hero__img">
-            <img src="placeholder.co/700" alt="" />
+      {/* Linha 3 - WEB DESIGN + Solution */}
+      <div className="hero__row hero__row--bottom">
+        <div className="hero__web-design">
+          <span>WEB DESIGN</span>
+          <img
+            src="/avatar1.png"
+            alt="emoji"
+            className="hero__emoji"
+          />
         </div>
-      </section>
-    )
+
+        <div className="hero__right">
+          <h1 className="hero__title">Solution</h1>
+        </div>
+      </div>
+    </section>
+  )
 }
