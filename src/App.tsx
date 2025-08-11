@@ -10,6 +10,11 @@ import { Difference } from './components/difference';
 import { Footer } from './components/footer';
 import { Modal } from './components/modal';
 
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './routes/home';
+
+
 function App() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,6 +38,12 @@ function App() {
       <Workflow />
       <Difference />
       <Footer />
+
+        <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
     </>
   )
 }
