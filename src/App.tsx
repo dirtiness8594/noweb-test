@@ -1,52 +1,35 @@
 import './App.css';
-import { useState } from "react";
-import { Header } from './components/header';
-import { Hero } from './components/hero';
-import { Experience } from './components/experience';
-import { Services } from './components/services';
-import { Stat } from './components/stats';
-import { Workflow } from './components/workflow';
-import { Difference } from './components/difference';
-import { Footer } from './components/footer';
-import { Modal } from './components/modal';
-
+import { useState } from 'react';
+import { Header } from './features/home/components/header';
+import { Hero } from './features/home/components/hero';
+import { Experience } from './features/home/components/experience';
+import { Services } from './features/home/components/services';
+import { Stat } from './features/home/components/stats';
+import { Workflow } from './features/home/components/workflow';
+import { Difference } from './features/home/components/difference';
+import { Footer } from './features/home/components/footer';
+import { Modal } from './features/home/components/modal';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './routes/home';
-
+import Home from './features/home/Home';
 
 function App() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+    return (
+        <>
+            <Header onOpenModal={() => setIsModalOpen(true)} />
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
+            <Router>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+            </Router>
 
-
-  return (
-    <>
-      <Header onOpenModal={() => setIsModalOpen(true)} />
-      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-        
-        
-        <Hero />
-      <Experience />
-      <Services />
-      <Stat />
-
-      ----- Missing /video
-
-
-      <Workflow />
-      <Difference />
-      <Footer />
-
-        <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
-    </>
-  )
+            <Footer />
+        </>
+    );
 }
 
-
-export default App
+export default App;

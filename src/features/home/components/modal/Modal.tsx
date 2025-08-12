@@ -1,60 +1,58 @@
-import React, { useState } from "react";
-
+import React, { useState } from 'react';
 
 type ModalProps = {
-  isOpen: boolean;
-  onClose: () => void;
+    isOpen: boolean;
+    onClose: () => void;
 };
 
 interface CepData {
-  logradouro: string;
-  complemento: string;
-  bairro: string;
-  localidade: string;
-  uf: string;
-  erro?: boolean;
+    logradouro: string;
+    complemento: string;
+    bairro: string;
+    localidade: string;
+    uf: string;
+    erro?: boolean;
 }
 
 export function Modal({ isOpen, onClose }: ModalProps) {
-  if (!isOpen) return null;
+    if (!isOpen) return null;
 
+    console.log('Open ', isOpen);
+    const [cep, setCep] = useState<string>('');
+    const [data, setData] = useState<CepData | null>(null);
+    const [error, setError] = useState<string>('');
 
-  console.log("Open ", isOpen)
-  const [cep, setCep] = useState<string>("");
-      const [data, setData] = useState<CepData | null>(null);
-      const [error, setError] = useState<string>("");
-    
-      const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-    
-        const sanitizedCep = cep.replace(/\D/g, "");
+
+        const sanitizedCep = cep.replace(/\D/g, '');
         if (sanitizedCep.length !== 8) {
-          setError("Digite um CEP válido com 8 dígitos.");
-          setData(null);
-          return;
-        }
-    
-        try {
-          const response = await fetch(`https://viacep.com.br/ws/${sanitizedCep}/json/`);
-          const result: CepData = await response.json();
-    
-          if (result.erro) {
-            setError("CEP não encontrado.");
+            setError('Digite um CEP válido com 8 dígitos.');
             setData(null);
-          } else {
-            setError("");
-            setData(result);
-          }
-        } catch {
-          setError("Erro ao buscar o CEP.");
-          setData(null);
+            return;
         }
-      };
+
+        try {
+            const response = await fetch(`https://viacep.com.br/ws/${sanitizedCep}/json/`);
+            const result: CepData = await response.json();
+
+            if (result.erro) {
+                setError('CEP não encontrado.');
+                setData(null);
+            } else {
+                setError('');
+                setData(result);
+            }
+        } catch {
+            setError('Erro ao buscar o CEP.');
+            setData(null);
+        }
+    };
 
     return (
         <div className="modal__overlay">
             <div className="modal__box">
-              <button onClick={onClose}>Fechar</button>
+                <button onClick={onClose}>Fechar</button>
 
                 <h2 className="modal__title">Buscar CEP</h2>
                 <form onSubmit={handleSubmit} className="modal__form">
@@ -62,10 +60,12 @@ export function Modal({ isOpen, onClose }: ModalProps) {
                         type="text"
                         placeholder="Digite o CEP"
                         value={cep}
-                        onChange={(e) => setCep(e.target.value)}
+                        onChange={e => setCep(e.target.value)}
                         className="modal__input"
                     />
-                    <button type="submit" className="modal__submit">Buscar</button>
+                    <button type="submit" className="modal__submit">
+                        Buscar
+                    </button>
                 </form>
 
                 {error && <p className="modal__error">{error}</p>}
@@ -81,5 +81,5 @@ export function Modal({ isOpen, onClose }: ModalProps) {
                 )}
             </div>
         </div>
-    )
+    );
 }

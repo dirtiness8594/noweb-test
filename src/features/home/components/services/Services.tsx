@@ -4,10 +4,13 @@ export const Services = () => {
             <div className="services__header">
                 <div className="services__label">🟠 SERVICES</div>
                 <h2 className="services__title">
-                    Empowering Brands Through<br />Strategic Digital Services
+                    Empowering Brands Through
+                    <br />
+                    Strategic Digital Services
                 </h2>
                 <p className="services__description">
-                    Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers.
+                    Established in 1995, NEXIN has been a leading force in the digital landscape for
+                    over two decades. We're a passionate team of designers.
                 </p>
             </div>
 
@@ -19,7 +22,8 @@ export const Services = () => {
                         <img src="/I1.png" alt="" />
                     </div>
                     <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
+                        Established in 1995, NEXIN has been leading force in the digital landscape
+                        for over two decades. We're a passionate
                     </p>
                     <button className="services__button">➜</button>
                 </div>
@@ -31,7 +35,8 @@ export const Services = () => {
                         <img src="/I2.png" alt="" />
                     </div>
                     <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
+                        Established in 1995, NEXIN has been leading force in the digital landscape
+                        for over two decades. We're a passionate
                     </p>
                     <button className="services__button services__button--active">➜</button>
                 </div>
@@ -43,11 +48,12 @@ export const Services = () => {
                         <img src="/I3.png" alt="" />
                     </div>
                     <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate
+                        Established in 1995, NEXIN has been leading force in the digital landscape
+                        for over two decades. We're a passionate
                     </p>
                     <button className="services__button">➜</button>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
