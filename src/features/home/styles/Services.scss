@@ -7,6 +7,10 @@
         color: $black;
         max-width: 1200px;
         margin: auto;
+
+         @media (max-width: 768px) {
+            padding: 2.5rem;
+        }
     }
 
     &__label {
@@ -37,6 +41,11 @@
         margin: 2rem auto 4rem;
         color: #797E88;
         line-height: 26px;
+
+         @media (max-width: 768px) {
+            margin: 2rem auto;
+            padding: 2rem;
+        }
     }
 
     &__grid {
@@ -45,6 +54,10 @@
         flex-wrap: wrap;
         border-top: 1px solid $border-color;
         padding: 4rem 0 0;
+
+         @media (max-width: 768px) {
+            padding: 2rem 0;
+        }
     }
 
     &__card {

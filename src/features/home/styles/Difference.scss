@@ -12,6 +12,8 @@
             max-width: unset;
             flex-wrap: wrap;
             overflow: hidden;
+            padding: 3rem 0rem;
+            gap: 0;
         }
     }
 
@@ -204,7 +206,7 @@
 
         @media (max-width: 768px) {
             width: 100%;
-            // display: block;
+            gap: 1.5rem;
         }
     }
 
@@ -214,7 +216,7 @@
         margin-top: 4rem;
         height: 188px;
         background-color: $primary-color-1;
-        border-radius: 40px;
+        border-radius: 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -273,5 +275,10 @@
         margin: 0;
     }
 
-    /* gap: 60px; */
+    &__mission-title,
+    &__mission-text {
+        @media (max-width: 768px) {
+            padding: 0;
+        }
+    }
 }
