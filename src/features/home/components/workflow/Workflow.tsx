@@ -28,7 +28,12 @@ export const Workflow = () => {
         <section className="workflow">
             <div className="workflow__container">
                 <div className="workflow__header">
-                    <span className="workflow__label">🟠 WORKFLOW</span>
+                    <span className="workflow__label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#121212" />
+                            <circle cx="16" cy="8" r="7.5" stroke="#FF6633" />
+                        </svg>
+                        WORKFLOW</span>
                     <h2 className="workflow__title">How We Work</h2>
                 </div>
                 <div className="workflow__steps">

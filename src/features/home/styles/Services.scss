@@ -10,6 +10,9 @@
     }
 
     &__label {
+        max-width: 700px;
+        margin: auto;
+        display: block;
         font-size: 14px;
         text-transform: uppercase;
         color: #888;

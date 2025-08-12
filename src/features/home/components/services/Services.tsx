@@ -32,7 +32,12 @@ export const Services = () => {
         <section className="services">
             <div className="services__container">
                 <div className="services__header">
-                    <div className="services__label">🟠 SERVICES</div>
+                    <div className="services__label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                        <circle cx="8" cy="8" r="8" fill="#121212" />
+                        <circle cx="16" cy="8" r="7.5" stroke="#FF6633" />
+                    </svg>
+                        SERVICES
+                    </div>
                     <h2 className="services__title">
                         Empowering Brands Through
                         <br />

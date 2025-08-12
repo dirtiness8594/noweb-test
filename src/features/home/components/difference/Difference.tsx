@@ -8,8 +8,10 @@ export const Difference = () => {
             <div className="difference__container">
                 <div className="difference__left">
                     <div className="difference__label-group">
-                        <span className="difference__dot difference__dot--filled" />
-                        <span className="difference__dot difference__dot--outlined" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                            <circle cx="8" cy="8" r="8" fill="#121212" />
+                            <circle cx="16" cy="8" r="7.5" stroke="#FF6633" />
+                        </svg>
                         <span className="difference__label">WHAT SETS US APART</span>
                     </div>
 
