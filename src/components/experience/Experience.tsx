@@ -18,14 +18,21 @@ export const Experience = () => {
                         <p className="experience__text">
                             Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers.
                         </p>
-                        <button className="experience__button">More About Us ⤴</button>
+                        <button className="experience__button">More About Us <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
                     </div>
 
                     <div className="experience__block">
                         <p className="experience__text">
                             Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers.
                         </p>
-                        <button className="experience__button">Get In Touch ⤴</button>
+                        <button className="experience__button">Get In Touch
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </button>
                     </div>
                 </div>
             </div>
