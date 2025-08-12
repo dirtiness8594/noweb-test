@@ -9,11 +9,12 @@
         color: $black;
         max-width: 1200px;
         margin: auto;
+   
+        @media (max-width: 768px) {
+            padding: 1rem;
+        }
     }
 
-    @media (max-width: 768px) {
-        padding: 1rem;
-    }
 
     &__logo {
         display: flex;
