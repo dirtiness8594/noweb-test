@@ -5,6 +5,10 @@
         flex-direction: column;
         background-color: $smoke-color-2;
         background: url(/Texture.png);
+
+        @media (max-width: 768px) {
+            padding: 3rem 1rem;
+        }
     }
 
     &__banner {
@@ -23,17 +27,28 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+
+        &--middle {
+            display: flex;
+            gap: 3rem;
+
+            @media (max-width: 768px) {
+                padding: 2rem 1rem;
+                gap: 1rem;
+            }
+        }
+
+        &--bottom {
+            padding-top: 5rem;
+            gap: 8rem;
+
+            @media (max-width: 768px) {
+                padding-top: 0rem;
+                gap: 2rem;
+            }
+        }
     }
 
-    &__row--middle {
-        display: flex;
-        gap: 3rem;
-    }
-
-    &__row--bottom {
-        padding-top: 5rem;
-        gap: 8rem;
-    }
 
     &__title {
         font-family: $font-display;
@@ -43,12 +58,20 @@
         color: $text-color;
         line-height: 1.1;
         flex-grow: 1;
+
+        @media (max-width: 768px) {
+            height: 4rem;
+        }
     }
 
     &__right {
         flex: 1 1 50%;
         max-width: 520px;
         text-align: end;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__description {
