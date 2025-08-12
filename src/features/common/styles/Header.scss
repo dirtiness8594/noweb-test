@@ -1,0 +1,70 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.5rem;
+  color: #121212;
+  border-bottom: 1px solid #D8DDE1;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  max-width: 217px;
+}
+
+.navbar__icon {
+  font-size: 24px;
+  color: limegreen;
+}
+
+.navbar__brand {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar__item {
+  cursor: pointer;
+  line-height: 1.6rem;
+  font-size: 14px;
+}
+
+.navbar__item--active {
+  border-bottom: 2px solid #BFF747;
+}
+
+.navbar__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.navbar__search {
+  background: none;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.navbar__quote {
+  background-color: #BFF747;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0;
+}

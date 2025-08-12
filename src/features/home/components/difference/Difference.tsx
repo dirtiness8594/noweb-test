@@ -1,3 +1,5 @@
+import "../../styles/Difference.scss";
+
 export const Difference = () => {
     return (
         <section className="difference">

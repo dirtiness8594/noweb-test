@@ -1,3 +1,6 @@
+import "../../styles/Services.scss";
+
+
 export const Services = () => {
     return (
         <section className="services">

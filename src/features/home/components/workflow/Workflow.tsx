@@ -1,3 +1,6 @@
+import "../../styles/Workflow.scss";
+
+
 export const Workflow = () => {
     return (
         <section className="workflow">

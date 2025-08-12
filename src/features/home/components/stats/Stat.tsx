@@ -1,3 +1,6 @@
+import "../../styles/Stat.scss";
+
+
 export const Stat = () => {
     return (
         <section className="stats">

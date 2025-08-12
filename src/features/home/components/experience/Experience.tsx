@@ -1,3 +1,6 @@
+import "../../styles/Experience.scss";
+
+
 export const Experience = () => {
     return (
         <section className="experience">

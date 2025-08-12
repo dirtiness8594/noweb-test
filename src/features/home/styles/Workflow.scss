@@ -1,0 +1,129 @@
+
+.workflow {
+  padding: 60px 40px;
+  background-color: white;
+  /* text-align: center; */
+  font-family: sans-serif;
+  color: black;
+}
+
+.workflow__label {
+  font-size: 14px;
+  color: #999;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.workflow__title {
+    font-size: 54px;
+    text-align: center;
+    font-weight: 500;
+    margin: auto;
+    font-family: 'Gallery Modern', serif;
+}
+
+.workflow__steps {
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.workflow__step {
+  width: 220px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.workflow__icon-circle {
+  display: flex;
+  justify-content: space-between;
+  /* width: 60px;
+  height: 60px; */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 50%; */
+  /* margin: 0 auto 10px; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.workflow__icon {
+  /* font-size: 24px; */
+}
+
+.workflow__icon img {
+  width: 50px;
+}
+
+.workflow__number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  display: block;
+  margin: 10px 0;
+}
+
+.workflow__arrow  {
+   /* background-color: red; */
+  display: block;
+  flex-grow: 1;
+  position: relative;
+  }
+
+
+.workflow__arrow::after {
+content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 88%;
+  height: 2px;
+  background-color: black;
+  z-index: 0;
+}
+
+.workflow__arrow::before {
+  content: "";
+  position: absolute;
+  top: 42%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid black; /* mesma cor da linha */
+  z-index: 1;
+}
+
+.workflow__step-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2rem 0;
+}
+
+.workflow__step-text {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* .workflow__arrow {
+  width: 40px;
+  height: 1px;
+  background-color: #ccc;
+  position: relative;
+} */
+
+/* .workflow__arrow::after {
+  content: "→";
+  position: absolute;
+  right: -16px;
+  top: -10px;
+  color: #ccc;
+  font-size: 18px;
+} */

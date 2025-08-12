@@ -1,0 +1,133 @@
+
+
+
+.experience {
+  background-color: #111;
+  color: white;
+  padding: 3rem 8rem 102px 8rem;
+  font-family: sans-serif;
+}
+
+.experience__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience__intro {
+  /* max-width: 700px; */
+}
+
+.experience__title {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 800px  ;
+  text-align: left;
+  font-family: 'Gallery Modern', serif;
+  line-height: 1.4;
+}
+
+.experience__details {
+  display: flex;
+  gap: 3rem;
+  padding:  0 0 0 91px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.experience__years {
+
+  margin-right: 5rem;
+}
+
+.experience__number {
+  font-size: 48px;
+  margin: 0;
+  text-align: left;
+}
+
+.experience__label {
+  font-size: 14px;
+  margin: 0;
+  /* margin-top: 5px; */
+  /* color: #aaa; */
+  font-weight: bold;
+  text-align: left;
+}
+
+.experience__block {
+  flex: 2;
+  max-width: 300px;
+}
+
+.experience__text {
+  font-size: 14px;
+  margin-bottom: 40px;
+  text-align: left;
+  color: #ccc;
+  line-height: 26px;
+}
+
+.experience__button {
+  background: unset;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 2px 0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  font-size: .9rem;
+}
+
+.experience__brands {
+  margin-top: 50px;
+  /* border-top: 1px solid #333; */
+  padding-top: 100px;
+  /* text-align: center; */
+  max-width: 1200px;
+  margin: auto;
+}
+
+.experience__brands-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.experience__brands-title {
+  position: relative;
+  padding: 0 .5rem; 
+  color: white#000;
+  background-color: #111; /* cor do fundo da página */
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 15%;
+  z-index: 1;
+}
+
+/* linha de fundo */
+.experience__brands-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #333; /* cor da linha */
+  z-index: 0;
+}
+
+
+.experience__logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 2rem;
+}
+
+.experience__logos img {
+  /* max-height: 217px; */
+  /* width: 180px; */
+  opacity: 0.8;
+  width: 15%;
+  /* width: 217px; */
+}
