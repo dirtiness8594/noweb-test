@@ -17,12 +17,12 @@ function App() {
         <>
             <Header onOpenModal={() => setIsModalOpen(true)} />
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-
+{/* 
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />
                 </Routes>
-            </Router>
+            </Router> */}
 
             <Footer />
         </>

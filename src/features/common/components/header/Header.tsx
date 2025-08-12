@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../../styles/Header.scss';
 import { MenuItem } from './components/MenuItem';
 
@@ -9,6 +10,12 @@ type MenuItem = {
     label: string;
     href: string;
     subPages?: { label: string; href: string }[];
+};
+
+type MenuItemType = {
+  label: string;
+  href: string;
+  subPages?: { label: string; href: string }[];
 };
 
 const menuItems: MenuItem[] = [
@@ -36,11 +43,15 @@ const menuItems: MenuItem[] = [
 ];
 
 export const Header = ({ onOpenModal }: HeaderProps) => {
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
     return (
         <nav className="header">
             <div className="header__logo">
                 <img src="/logo.png" alt="Logo" />
             </div>
+
             <ul className="header__menu">
                 {menuItems.map(item => (
                     <MenuItem key={item.label} {...item} />
@@ -54,7 +65,33 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
                     Get A Quote
                     <QuoteIcon />
                 </button>
+                <button
+                    className="header__hamburger"
+                    aria-label="Open menu"
+                    onClick={() => setMobileMenuOpen(true)}
+                >
+                    <HamburgerIcon />
+                </button>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            {mobileMenuOpen && (
+                <div className="mobile-menu">
+                    <button
+                        className="mobile-menu__close"
+                        aria-label="Close menu"
+                        onClick={() => setMobileMenuOpen(false)}
+                    >
+                        ✕
+                    </button>
+
+                    <ul className="mobile-menu__list">
+                        {menuItems.map((item) => (
+                            <MobileMenuItem key={item.label} item={item} />
+                        ))}
+                    </ul>
+                </div>
+            )}
         </nav>
     );
 };
@@ -82,3 +119,45 @@ const QuoteIcon = () => (
         />
     </svg>
 );
+
+const HamburgerIcon = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" >
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+    </svg>
+);
+
+const MobileMenuItem = ({ item }: { item: MenuItemType }) => {
+    const [open, setOpen] = useState(false);
+
+    return (
+        <li className="mobile-menu__item">
+            {item.subPages ? (
+                <>
+                    <button
+                        className="mobile-menu__item-button"
+                        onClick={() => setOpen(!open)}
+                        aria-expanded={open}
+                    >
+                        {item.label}
+                        <span className={`mobile-menu__arrow ${open ? 'open' : ''}`}>▸</span>
+                    </button>
+                    {open && (
+                        <ul className="mobile-menu__sublist">
+                            {item.subPages.map((sub) => (
+                                <li key={sub.label} className="mobile-menu__subitem">
+                                    <a href={sub.href}>{sub.label}</a>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
+                </>
+            ) : (
+                <a href={item.href} className="mobile-menu__link">
+                    {item.label}
+                </a>
+            )}
+        </li>
+    );
+};

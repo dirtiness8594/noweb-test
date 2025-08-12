@@ -30,6 +30,10 @@
         text-transform: capitalize;
         line-height: 1;
         margin: 2rem 0 0;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 
     &__subtitle {
