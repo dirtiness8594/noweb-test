@@ -16,10 +16,8 @@ export const Hero = () => {
                     <div className="hero__left">
                         <HeroTitleImage src="/Digital.png" alt="Digital Services" />
                         <div className="hero__left__mobile">
-                        <HeroTitleImage src="/Solution.png" alt="Creative Solutions" />
-
+                            <HeroTitleImage src="/Solution.png" alt="Creative Solutions" />
                         </div>
-
                     </div>
                     <div className="hero__right">
                         <HeroDescription />

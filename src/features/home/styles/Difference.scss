@@ -24,14 +24,8 @@
         gap: 0;
     }
 
-
-    &__left {
-        /* width: 45%; */
-    }
-
     &__right {
         padding: 0 0 0 0rem;
-        /* width: 60%; */
 
         @media (max-width: 768px) {
             padding: 0 3rem;
