@@ -1,6 +1,12 @@
 import '../../styles/Experience.scss';
 
+import { ExperienceBlock } from './components/ExperienceBlock';
+
 export const Experience = () => {
+
+    const text1 =
+        "Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers.";
+
     return (
         <section className="experience">
             <div className="experience__content">
@@ -11,71 +17,19 @@ export const Experience = () => {
                         That Meet Their Requirements.
                     </h2>
                 </div>
-
                 <div className="experience__details">
                     <div className="experience__years">
                         <h3 className="experience__number">25+</h3>
                         <p className="experience__label">Years Of Experience</p>
                     </div>
-
-                    <div className="experience__block">
-                        <p className="experience__text">
-                            Established in 1995, NEXIN has been a leading force in the digital
-                            landscape for over two decades. We're a passionate team of designers.
-                        </p>
-                        <button className="experience__button">
-                            More About Us{' '}
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M7 17L17 7M17 7H8M17 7V16"
-                                    stroke="#000000"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div className="experience__block">
-                        <p className="experience__text">
-                            Established in 1995, NEXIN has been a leading force in the digital
-                            landscape for over two decades. We're a passionate team of designers.
-                        </p>
-                        <button className="experience__button">
-                            Get In Touch
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20px"
-                                height="20px"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                            >
-                                <path
-                                    d="M7 17L17 7M17 7H8M17 7V16"
-                                    stroke="#000000"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
+                    <ExperienceBlock text={text1} buttonText="More About Us" />
+                    <ExperienceBlock text={text1} buttonText="Get In Touch" />
                 </div>
             </div>
-
             <div className="experience__brands">
                 <div className="experience__brands-wrapper">
                     <p className="experience__brands-title">We Worked With Global Largest Brands</p>
                 </div>
-
-                {/* <p className="experience__brands-title">We Worked With Global Largest Brands</p> */}
                 <div className="experience__logos">
                     <img src="/L1.png" alt="Tech Logo 1" />
                     <img src="/L2.png" alt="Technology Logo 2" />

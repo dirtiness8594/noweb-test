@@ -1,4 +1,6 @@
 import '../../styles/Difference.scss';
+import { Feature } from './components/Feature';
+import { TextBlock } from './components/TextBlock';
 
 export const Difference = () => {
     return (
@@ -45,12 +47,10 @@ export const Difference = () => {
                         Conduct thorough market research to the fast target audience behaviours.
                         Submit as many design tasks
                     </p>
-                    <div className="difference__mission">
-                        <h4 className="difference__mission-title">Our Mission</h4>
-                        <p className="difference__mission-text">
-                            Conduct thorough market research to the fast target audience behaviours.
-                        </p>
-                    </div>
+
+                    <TextBlock title="Our Mission">
+                        Conduct thorough market research to the fast target audience behaviours.
+                    </TextBlock>
                 </div>
 
                 <div className="difference__bottom">
@@ -59,27 +59,20 @@ export const Difference = () => {
                     </button>
 
                     <div className="difference__features">
-                        <div className="difference__feature">
-                            <div className="difference__feature-bg" />
-                            <img
-                                src="/D3.png"
-                                alt="Marketing Strategy"
-                                className="difference__feature-img"
-                            />
-                            <span className="difference__feature-label">Marketing Strategy</span>
-                        </div>
-                        <div className="difference__feature">
-                            <div className="difference__feature-bg" />
-                            <img
-                                src="D4.png"
-                                alt="UX/UI Solution"
-                                className="difference__feature-img"
-                            />
-                            <span className="difference__feature-label">
-                                UX/UI <br />
-                                Solution
-                            </span>
-                        </div>
+                        <Feature
+                            src="/D3.png"
+                            alt="Marketing Strategy"
+                            label="Marketing Strategy"
+                        />
+                        <Feature
+                            src="/D4.png"
+                            alt="UX/UI Solution"
+                            label={
+                                <>
+                                    UX/UI <br /> Solution
+                                </>
+                            }
+                        />
                     </div>
                 </div>
             </div>

@@ -1,5 +1,32 @@
 import '../../styles/Services.scss';
 
+import { ServiceCard } from './components/ServiceCard';
+
+const services = [
+    {
+        category: '• Visual Branding',
+        title: 'Web Design And Development',
+        icon: '/I1.png',
+        description:
+            "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate",
+    },
+    {
+        category: '• Brand Strategy',
+        title: 'Branding And Creative Services',
+        icon: '/I2.png',
+        description:
+            "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate",
+        isActive: true,
+    },
+    {
+        category: '• Identity Build',
+        title: 'Creative Digital Agency',
+        icon: '/I3.png',
+        description:
+            "Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate",
+    },
+];
+
 export const Services = () => {
     return (
         <section className="services">
@@ -15,46 +42,10 @@ export const Services = () => {
                     over two decades. We're a passionate team of designers.
                 </p>
             </div>
-
             <div className="services__grid">
-                <div className="services__card">
-                    <span className="services__category">• Visual Branding</span>
-                    <h3 className="services__card-title">Web Design And Development</h3>
-                    <div className="services__icon">
-                        <img src="/I1.png" alt="" />
-                    </div>
-                    <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape
-                        for over two decades. We're a passionate
-                    </p>
-                    <button className="services__button">➜</button>
-                </div>
-
-                <div className="services__card services__card--active">
-                    <span className="services__category">• Brand Strategy</span>
-                    <h3 className="services__card-title">Branding And Creative Services</h3>
-                    <div className="services__icon">
-                        <img src="/I2.png" alt="" />
-                    </div>
-                    <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape
-                        for over two decades. We're a passionate
-                    </p>
-                    <button className="services__button services__button--active">➜</button>
-                </div>
-
-                <div className="services__card">
-                    <span className="services__category">• Identity Build</span>
-                    <h3 className="services__card-title">Creative Digital Agency</h3>
-                    <div className="services__icon">
-                        <img src="/I3.png" alt="" />
-                    </div>
-                    <p className="services__card-text">
-                        Established in 1995, NEXIN has been leading force in the digital landscape
-                        for over two decades. We're a passionate
-                    </p>
-                    <button className="services__button">➜</button>
-                </div>
+                {services.map((service, idx) => (
+                    <ServiceCard key={idx} {...service} />
+                ))}
             </div>
         </section>
     );

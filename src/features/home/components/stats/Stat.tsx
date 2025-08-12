@@ -1,43 +1,20 @@
 import '../../styles/Stat.scss';
 
+import { StatItem } from './components/StatItem';
+
+const statsData = [
+    { number: '35k+', label: 'Project\nComplete' },
+    { number: '10k+', label: 'Happy\nCustomers' },
+    { number: '25+', label: 'Years\nExperiences' },
+    { number: '88', label: 'Awards\nAchievement' },
+];
+
 export const Stat = () => {
     return (
         <section className="stats">
-            <div className="stats__item">
-                <h3 className="stats__number">35k+</h3>
-                <p className="stats__label">
-                    Project
-                    <br />
-                    Complete
-                </p>
-            </div>
-
-            <div className="stats__item">
-                <h3 className="stats__number">10k+</h3>
-                <p className="stats__label">
-                    Happy
-                    <br />
-                    Customers
-                </p>
-            </div>
-
-            <div className="stats__item">
-                <h3 className="stats__number">25+</h3>
-                <p className="stats__label">
-                    Years
-                    <br />
-                    Experiences
-                </p>
-            </div>
-
-            <div className="stats__item">
-                <h3 className="stats__number">88</h3>
-                <p className="stats__label">
-                    Awards
-                    <br />
-                    Achievement
-                </p>
-            </div>
+            {statsData.map((stat, idx) => (
+                <StatItem key={idx} number={stat.number} label={stat.label} />
+            ))}
         </section>
     );
 };
