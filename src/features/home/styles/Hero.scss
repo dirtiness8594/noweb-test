@@ -27,7 +27,7 @@
         text-transform: capitalize;
         line-height: 1.6;
 
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
             text-align: center;
         }
     }
@@ -56,7 +56,7 @@
             gap: 6rem;
 
             @media (max-width: 768px) {
-                padding-top: 0rem;
+                padding: 2rem;
                 gap: 2rem;
             }
         }
@@ -77,6 +77,20 @@
         }
     }
 
+    &__left {
+        &__mobile {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+
+                img {
+                    height: 3rem;
+                }
+            }
+        }
+    }
+
     &__right {
         flex: 1 1 50%;
         max-width: 520px;
@@ -84,6 +98,10 @@
 
         @media (max-width: 768px) {
             text-align: center;
+
+            .hero__title {
+                display: none;
+            }
         }
     }
 
@@ -97,7 +115,7 @@
         text-align: left;
         margin-bottom: 1rem;
 
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
             max-width: 100%;
             text-align: center;
         }
@@ -195,6 +213,10 @@
         position: relative;
         line-height: 1;
         gap: 1rem;
+
+        @media (max-width: 768px) {
+            padding: 1.5rem;
+        }
     }
 
     &__emoji {
@@ -205,6 +227,11 @@
         position: absolute;
         padding: 1rem;
         top: 0;
-        right: -3.5rem;
+        // right: -3.5rem;
+        
+        @media (max-width: 768px) {
+            right: 0rem;
+            position: relative;
+        }
     }
 }
