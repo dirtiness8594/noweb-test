@@ -1,7 +1,12 @@
 .experience {
     background-color: #111;
-    color: white;
-    padding: 3rem 8rem 102px 8rem;
+
+    &__container {
+        color: white;
+        padding: 3rem 8rem 102px 8rem;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     @media (max-width: 768px) {
         padding: 2rem 3rem;
@@ -17,10 +22,10 @@
 
     &__title {
         font-size: 2rem;
-        font-weight: 500;
+        font-weight: 400;
         max-width: 800px;
         text-align: left;
-        font-family: 'Gallery Modern', serif;
+        font-family: "Marcellus", serif;
         line-height: 1.4;
 
         @media (max-width: 768px) {
@@ -31,7 +36,7 @@
     &__details {
         display: flex;
         gap: 3rem;
-        padding: 0 0 0 91px;
+        padding: 2rem 0 0 91px;
         flex-wrap: wrap;
         align-items: flex-start;
 
@@ -66,19 +71,25 @@
         font-size: 14px;
         margin-bottom: 40px;
         text-align: left;
-        color: #ccc;
+        color: #f5f5f5;
+        font-family: $font-default;
         line-height: 26px;
     }
 
     &__button {
         background: unset;
-        color: white;
-        border-bottom: 2px solid white;
-        padding: 2px 0;
+        color: $white;
+        border: none;
+        border-bottom: 2px solid $white;
+        padding: 4px 0;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 500;
         border-radius: 0;
-        font-size: .9rem;
+        font-size: .8rem;
+
+        svg {
+            margin: 0 2px -3px;
+        }
     }
 
     &__brands {
@@ -102,6 +113,7 @@
         font-size: 1rem;
         margin-left: 15%;
         z-index: 1;
+        font-family: "Marcellus", serif;
     }
 
     &__brands-wrapper::before {
@@ -129,11 +141,10 @@
     &__logos img {
         opacity: 0.8;
         width: 15%;
+        scale: .9;
 
         @media (max-width: 768px) {
             width: 100px;
         }
     }
-
-    font-family: sans-serif;
 }

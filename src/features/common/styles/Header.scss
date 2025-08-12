@@ -1,10 +1,15 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 1.5rem;
-    color: $black;
     border-bottom: 1px solid $border-color;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 1.5rem;
+        color: $black;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     @media (max-width: 768px) {
         padding: 1rem;
@@ -71,7 +76,7 @@
     }
 
     &__submenu {
-        background-color: $bg-color;
+        background-color: $white;
         position: absolute;
         top: 100%;
         color: $text-color;
@@ -111,6 +116,10 @@
         font-size: 1rem;
         line-height: 1.5rem;
         border-radius: 0;
+
+        svg {
+            margin: 0 2px -3px;
+        }
 
         @media (max-width: 768px) {
             display: none;

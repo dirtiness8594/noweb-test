@@ -19,9 +19,16 @@ type MenuItemType = {
 };
 
 const menuItems: MenuItem[] = [
-    { label: 'Home', href: '/' },
+    { label: 'Home', href: '/',  subPages: [
+            { label: 'Home', href: '/' }
+        ],},
     { label: 'About Us', href: '/about' },
-    { label: 'Portfolio', href: '/portfolio' },
+    { label: 'Portfolio', href: '/portfolio',
+         subPages: [
+            { label: 'Projects', href: '/pages/projects' },
+            { label: 'Main', href: '/pages/main' },
+        ],
+    },
     {
         label: 'Pages',
         href: '/pages',
@@ -48,50 +55,50 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
 
     return (
         <nav className="header">
-            <div className="header__logo">
-                <img src="/logo.png" alt="Logo" />
-            </div>
-
-            <ul className="header__menu">
-                {menuItems.map(item => (
-                    <MenuItem key={item.label} {...item} />
-                ))}
-            </ul>
-            <div className="header__actions">
-                <button onClick={onOpenModal} className="header__search" aria-label="Search">
-                    <SearchIcon />
-                </button>
-                <button className="header__quote">
-                    Get A Quote
-                    <QuoteIcon />
-                </button>
-                <button
-                    className="header__hamburger"
-                    aria-label="Open menu"
-                    onClick={() => setMobileMenuOpen(true)}
-                >
-                    <HamburgerIcon />
-                </button>
-            </div>
-
-            {/* Mobile Menu Overlay */}
-            {mobileMenuOpen && (
-                <div className="mobile-menu">
-                    <button
-                        className="mobile-menu__close"
-                        aria-label="Close menu"
-                        onClick={() => setMobileMenuOpen(false)}
-                    >
-                        ✕
-                    </button>
-
-                    <ul className="mobile-menu__list">
-                        {menuItems.map((item) => (
-                            <MobileMenuItem key={item.label} item={item} />
-                        ))}
-                    </ul>
+            <div className="header__container">
+                <div className="header__logo">
+                    <img src="/logo.png" alt="Logo" />
                 </div>
-            )}
+                <ul className="header__menu">
+                    {menuItems.map(item => (
+                        <MenuItem key={item.label} {...item} />
+                    ))}
+                </ul>
+                <div className="header__actions">
+                    <button onClick={onOpenModal} className="header__search" aria-label="Search">
+                        <SearchIcon />
+                    </button>
+                    <button className="header__quote">
+                        Get A Quote
+                        <QuoteIcon />
+                    </button>
+                    <button
+                        className="header__hamburger"
+                        aria-label="Open menu"
+                        onClick={() => setMobileMenuOpen(true)}
+                    >
+                        <HamburgerIcon />
+                    </button>
+                </div>
+
+                {mobileMenuOpen && (
+                    <div className="mobile-menu">
+                        <button
+                            className="mobile-menu__close"
+                            aria-label="Close menu"
+                            onClick={() => setMobileMenuOpen(false)}
+                        >
+                            ✕
+                        </button>
+
+                        <ul className="mobile-menu__list">
+                            {menuItems.map((item) => (
+                                <MobileMenuItem key={item.label} item={item} />
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
         </nav>
     );
 };
