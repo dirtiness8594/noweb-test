@@ -2,7 +2,8 @@
     background-color: $smoke-color-2;
     background: url(/Texture.png);
     line-height: 0;
-    
+    z-index: 1;
+
     &__container {
         padding: 4rem 12rem 4rem 8rem;
         display: flex;
@@ -25,6 +26,10 @@
         color: $title-color;
         text-transform: capitalize;
         line-height: 1.6;
+
+         @media (max-width: 768px) {
+            text-align: center;
+        }
     }
 
     &__row {
@@ -32,12 +37,16 @@
         align-items: center;
         flex-wrap: wrap;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
         &--middle {
             display: flex;
             gap: 3rem;
 
             @media (max-width: 768px) {
-                padding: 2rem 1rem;
+                padding: 2rem 1rem 10rem;
                 gap: 1rem;
             }
         }
@@ -85,9 +94,13 @@
         line-height: 1.6;
         text-transform: capitalize;
         max-width: 80%;
-        text-align: end;
         text-align: left;
         margin-bottom: 1rem;
+
+         @media (max-width: 768px) {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     &__button {
@@ -115,6 +128,12 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+
+        @media (max-width: 768px) {
+            top: calc(100% + 2rem);
+            right: 50%;
+            transform: translateX(50%);
+        }
     }
 
     &__avatars {
@@ -154,6 +173,7 @@
     &__rating {
         font-size: 14px;
         color: $text-color;
+        line-height: 1;
     }
 
     &__rating strong {
