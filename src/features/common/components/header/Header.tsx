@@ -41,13 +41,11 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
             <div className="header__logo">
                 <img src="/logo.png" alt="Logo" />
             </div>
-
             <ul className="header__menu">
                 {menuItems.map(item => (
                     <MenuItem key={item.label} {...item} />
                 ))}
             </ul>
-
             <div className="header__actions">
                 <button onClick={onOpenModal} className="header__search" aria-label="Search">
                     <SearchIcon />
@@ -60,8 +58,6 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
         </nav>
     );
 };
-
-// Ícones
 
 const SearchIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none">

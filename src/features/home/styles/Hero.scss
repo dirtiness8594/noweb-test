@@ -3,7 +3,7 @@
         padding: 4rem 10rem;
         display: flex;
         flex-direction: column;
-        background-color: #f9f9f9;
+        background-color: $smoke-color-2;
         background: url(/Texture.png);
     }
 
@@ -12,9 +12,9 @@
     }
 
     &__tagline p {
-        font-family: 'DM Sans', sans-serif;
-        font-size: 14px;
-        color: #121212;
+        font-family: $font-default;
+        font-size: $font-size-md;
+        color: $title-color;
         text-transform: capitalize;
         line-height: 1.6;
     }
@@ -36,11 +36,11 @@
     }
 
     &__title {
-        font-family: 'Gallery Modern', serif;
+        font-family: $font-display;
         font-weight: 400;
         height: 100px;
         margin: 0;
-        color: #121212;
+        color: $text-color;
         line-height: 1.1;
         flex-grow: 1;
     }
@@ -52,9 +52,9 @@
     }
 
     &__description {
-        font-family: 'DM Sans', sans-serif;
+        font-family: $font-default;
         font-size: 1rem;
-        color: #121212;
+        color: $text-color;
         line-height: 1.6;
         text-transform: capitalize;
         text-align: end;
@@ -65,9 +65,9 @@
     &__button {
         padding: 0.3rem .5rem;
         background-color: unset;
-        color: black;
-        border-bottom: 2px solid black;
-        font-size: 14px;
+        color: $black;
+        border-bottom: 2px solid $black;
+        font-size: $font-size-md;
         font-weight: 500;
         border-radius: 0;
         cursor: pointer;
@@ -92,7 +92,7 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        border: 1px solid black;
+        border: 1px solid $black;
         border-radius: 2rem;
         padding: .5rem;
     }
@@ -102,27 +102,27 @@
         height: 44px;
         border-radius: 50%;
         border: 2px solid white;
-        background-color: #121212;
+        background-color: $text-color;
     }
 
     &__avatar-count {
-        background-color: #121212;
-        color: white;
+        background-color: $text-color;
+        color: $white;
         font-size: 14px;
         font-weight: 500;
-        font-family: 'Kanit', sans-serif;
+        font-family: $font-hero;
         width: 44px;
         height: 44px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid white;
+        border: 2px solid $white;
     }
 
     &__rating {
         font-size: 14px;
-        color: #121212;
+        color: $text-color;
     }
 
     &__rating strong {
@@ -134,11 +134,11 @@
         background-color: $primary-color-1;
         border-radius: 2rem;
         padding: 1rem 4rem 1rem 2rem;
-        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-family: $font-hero-web;
         font-size: 1.5rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: #121212;
+        color: $text-color;
         display: flex;
         align-items: center;
         position: relative;
@@ -148,7 +148,7 @@
     &__emoji {
         width: 72px;
         height: 72px;
-        background-color: #121212;
+        background-color: $text-color;
         border-radius: 2rem;
         position: absolute;
         padding: 1rem;
