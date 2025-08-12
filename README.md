@@ -1,69 +1,36 @@
-# React + TypeScript + Vite
+# 🪶 Noweb Website Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um website clone a um modleo pre-fedinido.
 
-Currently, two official plugins are available:
+### 📦 installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+1.  git clone https://github.com/dirtiness8594/noweb-test.git
+2. cd no-web-test
+3. npm install
+4. npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ✅ Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Contém um modal acessado pela lupa no cabeçalho do website para pesquisa de CEP's.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 💫 Bibliotecas e Ferramentas
+
+- [Vite](https://vitejs.dev/) — Bundler e Dev Server
+- [ReactJS](https://reactjs.org/) — Biblioteca de UI
+- [TypeScript](https://www.typescriptlang.org/) — Tipagem estática
+- [SCSS](https://sass-lang.com/) — CSS com superpoderes
+- [React Router DOM](https://reactrouter.com/) — Gerenciamento de rotas
+
+### 🪡 development
+
+After clone, feel free to customize the website.
+
+### 📜 license
+[MIT](https://choosealicense.com/licenses/mit/)
+
+### 🧩 creator
+
+@themandalorian
+
