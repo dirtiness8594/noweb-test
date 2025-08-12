@@ -1,6 +1,8 @@
 .hero {
     background-color: $smoke-color-2;
     background: url(/Texture.png);
+    line-height: 0;
+    
     &__container {
         padding: 4rem 12rem 4rem 8rem;
         display: flex;
@@ -82,6 +84,7 @@
         color: $text-color;
         line-height: 1.6;
         text-transform: capitalize;
+        max-width: 80%;
         text-align: end;
         text-align: left;
         margin-bottom: 1rem;
@@ -170,6 +173,7 @@
         display: flex;
         align-items: center;
         position: relative;
+        line-height: 1;
         gap: 1rem;
     }
 

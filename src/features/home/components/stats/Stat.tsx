@@ -1,4 +1,4 @@
-import '../../styles/Stat.scss';
+import '../../styles/Stats.scss';
 
 import { StatItem } from './components/StatItem';
 
@@ -12,9 +12,11 @@ const statsData = [
 export const Stat = () => {
     return (
         <section className="stats">
-            {statsData.map((stat, idx) => (
-                <StatItem key={idx} number={stat.number} label={stat.label} />
-            ))}
+            <div className="stats__container">
+                {statsData.map((stat, idx) => (
+                    <StatItem key={idx} number={stat.number} label={stat.label} />
+                ))}
+            </div>
         </section>
     );
 };

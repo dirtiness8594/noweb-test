@@ -77,18 +77,32 @@
     }
 
     &__button {
+        position: relative;
         background: unset;
-        color: $white;
+        color: #ffffff;
         border: none;
-        border-bottom: 2px solid $white;
         padding: 4px 0;
         cursor: pointer;
         font-weight: 500;
         border-radius: 0;
-        font-size: .8rem;
+        font-size: 0.8rem;
+        overflow: hidden;
+        border-bottom: 2px solid #ffffff;
 
-        svg {
-            margin: 0 2px -3px;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $primary-color-1;
+            transition: width 0.3s ease;
+            z-index: 1;
+        }
+
+        &:hover::after {
+            width: 100%;
         }
     }
 

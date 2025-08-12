@@ -1,8 +1,13 @@
 .workflow {
-    padding: 60px 40px;
     background-color: white;
-    font-family: sans-serif;
-    color: black;
+
+    &__container {
+        padding: 60px 40px;
+        font-family: sans-serif;
+        color: black;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     &__label {
         font-size: 14px;
@@ -18,7 +23,7 @@
         text-align: center;
         font-weight: 500;
         margin: auto;
-        font-family: 'Gallery Modern', serif;
+        font-family: "Marcellus", serif;
     }
 
     &__steps {
@@ -34,7 +39,7 @@
     }
 
     &__step {
-        width: 220px;
+        // width: 220px;
         /* text-align: center; */
         position: relative;
     }
@@ -57,7 +62,7 @@
     }
 
     &__icon img {
-        width: 50px;
+        width: 70px;
     }
 
     &__number {
@@ -79,10 +84,11 @@
     &__arrow::after {
         content: "";
         position: absolute;
-        top: 40%;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
         width: 88%;
-        height: 2px;
+        height: 1px;
         background-color: black;
         z-index: 0;
     }
@@ -90,7 +96,8 @@
     &__arrow::before {
         content: "";
         position: absolute;
-        top: 42%;
+        top: 50%;
+        transform: translateY(-50%);
         right: 10%;
         transform: translateY(-50%);
         width: 0;
@@ -109,7 +116,7 @@
     }
 
     &__step-text {
-        font-size: 12px;
+        font-size: 16px;
         color: #666;
         line-height: 1.4;
     }

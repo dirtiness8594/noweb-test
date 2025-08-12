@@ -53,9 +53,11 @@ export function Modal({ isOpen, onClose }: ModalProps) {
     return (
         <div className="modal__overlay">
             <div className="modal__box">
-                <button onClick={onClose}>Fechar</button>
-
+                <button className="modal__button" onClick={onClose}>Fechar</button>
                 <h2 className="modal__title">Buscar CEP</h2>
+                <p className="modal__info">
+                    Para fazer nova consulta, basta preencher novamente o campo abaixo e pressionar Buscar.
+                </p>
                 <form onSubmit={handleSubmit} className="modal__form">
                     <input
                         type="text"
@@ -68,9 +70,7 @@ export function Modal({ isOpen, onClose }: ModalProps) {
                         Buscar
                     </button>
                 </form>
-
                 {error && <p className="modal__error">{error}</p>}
-
                 {data && (
                     <div className="modal__result">
                         <input readOnly value={data.logradouro} placeholder="Logradouro" />

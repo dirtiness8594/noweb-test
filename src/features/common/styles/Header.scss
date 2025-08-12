@@ -223,6 +223,10 @@
         color: $black;
         text-decoration: none;
 
+        svg {
+            margin: 0 0 -3px;
+        }
+
         &:hover {
             text-decoration: underline;
         }

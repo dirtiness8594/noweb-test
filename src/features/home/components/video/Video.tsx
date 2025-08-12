@@ -5,7 +5,7 @@ export const Video = () => {
         <section className="video">
             <div className="video__container">
              <button className="video__cta-button-circle">
-                Let’s Talk <span className="footer__cta-icon">➜</span>
+                Play video
             </button>
             </div>
         </section>

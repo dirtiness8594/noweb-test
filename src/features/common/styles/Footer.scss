@@ -1,19 +1,28 @@
 .footer {
-    padding: 80px 0 40px;
-    background-color: $white;
-    color: $white;
-    position: relative;
     font-family: 'DM Sans', sans-serif;
+    background-color: $white;
+
+    &__container {
+        color: $white;
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+    }
 
     &__cta {
-        padding: $spacing-xl $spacing-lg;
         background-color: $title-color;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 60px;
-        flex-wrap: wrap;
-        margin-bottom: 60px;
+
+        &__container {
+            padding: $spacing-xl $spacing-lg;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+            max-width: 1200px;
+            margin: auto;
+        }
     }
 
     &__cta-texts {
@@ -89,7 +98,7 @@
     &__bottom {
         display: flex;
         flex-direction: column;
-        padding: 0 60px;
+        padding: 2rem 60px;
         gap: 30px;
     }
 

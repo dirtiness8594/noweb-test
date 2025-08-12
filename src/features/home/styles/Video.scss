@@ -6,25 +6,23 @@
         justify-content: center;
         background-size: cover;
         align-items: center;
-        
+
         @media (max-width: 768px) {
-            // background-size: contain;
             height: auto;
             padding: 2rem 0;
         }
     }
+
     &__cta-button-circle {
         width: 9.5rem;
         height: 9.5rem;
         border-radius: 9999px;
-        font-size: 1rem;
         background-color: #ffffff;
         color: #000000;
         border: none;
         font-size: 0.875rem;
-        font-family: "DM Sans", sans-serif;
         font-weight: 700;
-        text-transform: capitalize;
+        text-transform: uppercase;
         line-height: 24px;
         display: flex;
         align-items: center;
@@ -32,5 +30,9 @@
         gap: 6px;
         cursor: pointer;
         transition: background-color 0.3s ease;
+
+         &:hover {
+            background-color: lighten($primary-color-1, 10%);
+        }
     }
 }
