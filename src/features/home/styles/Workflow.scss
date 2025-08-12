@@ -23,7 +23,7 @@
         text-align: center;
         font-weight: 500;
         margin: auto;
-        font-family: "Marcellus", serif;
+        font-family: $font-title;
     }
 
     &__steps {
@@ -39,26 +39,12 @@
     }
 
     &__step {
-        // width: 220px;
-        /* text-align: center; */
         position: relative;
     }
 
     &__icon-circle {
         display: flex;
         justify-content: space-between;
-        /* width: 60px;
-    height: 60px; */
-        /* border: 1px solid #ccc; */
-        /* border-radius: 50%; */
-        /* margin: 0 auto 10px; */
-        /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    }
-
-    &__icon {
-        /* font-size: 24px; */
     }
 
     &__icon img {
@@ -74,12 +60,10 @@
     }
 
     &__arrow {
-        /* background-color: red; */
         display: block;
         flex-grow: 1;
         position: relative;
     }
-
 
     &__arrow::after {
         content: "";
@@ -105,7 +89,6 @@
         border-top: 6px solid transparent;
         border-bottom: 6px solid transparent;
         border-left: 10px solid black;
-        /* mesma cor da linha */
         z-index: 1;
     }
 
@@ -120,20 +103,4 @@
         color: #666;
         line-height: 1.4;
     }
-
-    /* &__arrow {
-    width: 40px;
-    height: 1px;
-    background-color: #ccc;
-    position: relative;
-  } */
-
-    /* &__arrow::after {
-    content: "→";
-    position: absolute;
-    right: -16px;
-    top: -10px;
-    color: #ccc;
-    font-size: 18px;
-  } */
 }

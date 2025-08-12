@@ -45,20 +45,6 @@
         gap: 16px;
     }
 
-    // &__dot {
-    //     width: 16px;
-    //     height: 16px;
-    //     border-radius: 50%;
-    // }
-
-    // &__dot--filled {
-    //     background-color: #121212;
-    // }
-
-    // &__dot--outlined {
-    //     border: 1px solid #ff6633;
-    // }
-
     &__label {
         color: #797e88;
         font-size: 16px;
@@ -70,7 +56,7 @@
 
     &__title {
         font-size: 3rem;
-        font-family: "Marcellus", serif;
+        font-family: $font-title;
         font-weight: 400;
         text-transform: capitalize;
         line-height: 1.2;
@@ -126,14 +112,9 @@
     &__image-small {
         width: 283px;
         height: 297px;
-
-        @media (max-width: 768px) {
-            // width: 100px;
-        }
     }
 
     &__text-small {
-        /* width: 357px; */
         color: #797e88;
         font-size: 16px;
         font-family: "DM Sans", sans-serif;
@@ -253,13 +234,12 @@
     &__mission {
         display: flex;
         flex-direction: column;
-        // gap: 16px;
         width: 357px;
     }
 
     &__mission-title {
         font-size: 24px;
-        font-family: "Marcellus", serif;
+        font-family: $font-title;
         color: #121212;
         margin: 1rem 0 0;
         padding: 0 30px;

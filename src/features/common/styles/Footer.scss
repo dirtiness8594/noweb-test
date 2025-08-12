@@ -115,7 +115,6 @@
     &__links-right {
         display: flex;
         gap: 48px;
-        // flex-wrap: wrap;
         flex-direction: column;
 
         @media (max-width: 768px) {
