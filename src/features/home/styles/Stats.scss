@@ -13,6 +13,7 @@
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: center;
+            padding: 3rem;
         }
     }
 
@@ -29,7 +30,7 @@
         position: relative;
 
         @media (max-width: 768px) {
-            width: 80%;
+            width: 100%;
 
             &:not(:first-child) {
                 margin-top: -1rem;
@@ -51,6 +52,8 @@
         @media (max-width: 768px) {
             width: 110%;
             height: 100%;
+            left: 0;
+            top: 0;
         }
     }
 
