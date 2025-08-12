@@ -1,5 +1,4 @@
-import "../../styles/Stat.scss";
-
+import '../../styles/Stat.scss';
 
 export const Stat = () => {
     return (

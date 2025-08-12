@@ -1,12 +1,9 @@
-import "../../styles/Hero.scss";
-
-
+import '../../styles/Hero.scss';
 
 export const Hero = () => {
     return (
         <section className="hero">
             <div className="hero__container">
-                {/* Linha 1 - Tagline */}
                 <div className="hero__tagline">
                     <p>
                         Great Design Services <br />
@@ -14,11 +11,9 @@ export const Hero = () => {
                     </p>
                 </div>
 
-                {/* Linha 2 - Digital + Texto/Botão/Reviews */}
                 <div className="hero__row hero__row--middle">
                     <div className="hero__left">
                         <img className="hero__title" src="/Digital.png" alt="" />
-                        {/* <h1 className="hero__title">Digital</h1> */}
                     </div>
                     <div className="hero__right">
                         <p className="hero__description">
@@ -39,9 +34,9 @@ export const Hero = () => {
                                 <path
                                     d="M7 17L17 7M17 7H8M17 7V16"
                                     stroke="#000000"
-                                    stroke-width="2"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
+                                    strokeWidth="2"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
                                 />
                             </svg>
                         </button>
@@ -60,7 +55,6 @@ export const Hero = () => {
                     </div>
                 </div>
 
-                {/* Linha 3 - WEB DESIGN + Solution */}
                 <div className="hero__row hero__row--bottom">
                     <div className="hero__web-design">
                         <span>
@@ -72,8 +66,6 @@ export const Hero = () => {
 
                     <div className="hero__right">
                         <img className="hero__title" src="/Solution.png" alt="" />
-
-                        {/* <h1 className="hero__title">Solution</h1> */}
                     </div>
                 </div>
             </div>

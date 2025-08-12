@@ -1,70 +1,103 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem;
+    color: $black;
+    border-bottom: 1px solid $border-color;
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 1.5rem;
-  color: #121212;
-  border-bottom: 1px solid #D8DDE1;
-}
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
 
-.navbar__logo {
-  display: flex;
-  align-items: center;
-}
+    &__logo img {
+        max-width: 217px;
+    }
 
-.navbar__logo img {
-  max-width: 217px;
-}
+    &__icon {
+        font-size: $font-size-lg;
+        color: $primary-color-1;
+    }
 
-.navbar__icon {
-  font-size: 24px;
-  color: limegreen;
-}
+    &__brand {
+        font-size: $font-size-lg;
+        font-weight: bold;
+        margin-left: 8px;
+    }
 
-.navbar__brand {
-  font-size: 24px;
-  font-weight: bold;
-  margin-left: 8px;
-}
+    &__menu {
+        display: flex;
+        gap: 3rem;
+        list-style: none;
+    }
 
-.navbar__menu {
-  display: flex;
-  gap: 3rem;
-  list-style: none;
-}
+    &__item {
+        position: relative;
 
-.navbar__item {
-  cursor: pointer;
-  line-height: 1.6rem;
-  font-size: 14px;
-}
+        &--active {
+            border-bottom: 2px solid $primary-color-1;
+        }
 
-.navbar__item--active {
-  border-bottom: 2px solid #BFF747;
-}
+        &:hover {
+            .header__submenu {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
 
-.navbar__actions {
-  display: flex;
-  gap: 12px;
-}
+    &__link {
+        cursor: pointer;
+        line-height: 1.6rem;
+        font-size: $font-size-md;
+        color: $black;
 
-.navbar__search {
-  background: none;
-  border: 1px solid lightgray;
-  padding: 1rem;
-  cursor: pointer;
-  border-radius: 0;
-}
+        &:hover {
+            border-bottom: 2px solid $primary-color-1;
+        }
+    }
 
-.navbar__quote {
-  background-color: #BFF747;
-  border: none;
-  padding: 1rem 2rem;
-  cursor: pointer;
-  color: black;
-  font-weight: bold;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  border-radius: 0;
+    &__submenu {
+        background-color: $bg-color;
+        position: absolute;
+        top: 100%;
+        color: $text-color;
+        left: 0;
+        padding: 1rem;
+        border: 1px solid $border-color;
+        transition: opacity 0.2s ease, visibility 0.2s ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__sublink {
+        color: $black;
+        line-height: 1.5;
+    }
+
+    &__actions {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__search {
+        background: none;
+        border: 1px solid $border-color;
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 0;
+    }
+
+    &__quote {
+        background-color: $primary-color-1;
+        border: none;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        color: $black;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        border-radius: 0;
+    }
 }

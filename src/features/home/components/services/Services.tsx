@@ -1,5 +1,4 @@
-import "../../styles/Services.scss";
-
+import '../../styles/Services.scss';
 
 export const Services = () => {
     return (

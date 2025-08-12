@@ -1,176 +1,158 @@
-
 .hero {
-  /* background-color: red; */
+    &__container {
+        padding: 4rem 10rem;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        background: url(/Texture.png);
+    }
+
+    &__banner {
+        width: 100%;
+    }
+
+    &__tagline p {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+        color: #121212;
+        text-transform: capitalize;
+        line-height: 1.6;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__row--middle {
+        display: flex;
+        gap: 3rem;
+    }
+
+    &__row--bottom {
+        padding-top: 5rem;
+        gap: 8rem;
+    }
+
+    &__title {
+        font-family: 'Gallery Modern', serif;
+        font-weight: 400;
+        height: 100px;
+        margin: 0;
+        color: #121212;
+        line-height: 1.1;
+        flex-grow: 1;
+    }
+
+    &__right {
+        flex: 1 1 50%;
+        max-width: 520px;
+        text-align: end;
+    }
+
+    &__description {
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
+        color: #121212;
+        line-height: 1.6;
+        text-transform: capitalize;
+        text-align: end;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        padding: 0.3rem .5rem;
+        background-color: unset;
+        color: black;
+        border-bottom: 2px solid black;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 0;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        text-transform: capitalize;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__reviews {
+        position: absolute;
+        right: 0;
+        top: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    &__avatars {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        border: 1px solid black;
+        border-radius: 2rem;
+        padding: .5rem;
+    }
+
+    &__avatars img {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 2px solid white;
+        background-color: #121212;
+    }
+
+    &__avatar-count {
+        background-color: #121212;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Kanit', sans-serif;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
+    }
+
+    &__rating {
+        font-size: 14px;
+        color: #121212;
+    }
+
+    &__rating strong {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    &__web-design {
+        background-color: $primary-color-1;
+        border-radius: 2rem;
+        padding: 1rem 4rem 1rem 2rem;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #121212;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 1rem;
+    }
+
+    &__emoji {
+        width: 72px;
+        height: 72px;
+        background-color: #121212;
+        border-radius: 2rem;
+        position: absolute;
+        padding: 1rem;
+        top: 0;
+        right: -5rem;
+    }
 }
-
-.hero__container {
-  padding: 4rem 10rem;
-  display: flex;
-  flex-direction: column;
-  /* gap: 3rem; */
-  background-color: #f9f9f9;
-  background: url(/Texture.png);
-}
-
-.hero__banner {
-  width: 100%;
-}
-
-/* === Linha 1: Tagline === */
-.hero__tagline p {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
-  color: #121212;
-  text-transform: capitalize;
-  line-height: 1.6;
-}
-
-/* === Linha 2 & 3 === */
-.hero__row {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  /* gap: 2rem; */
-}
-
-.hero__row--middle {
-  display: flex;
-  gap: 3rem;
-  /* justify-content: space-between; */
-  /* padding-top: 5rem; */
-}
-
-.hero__row--bottom {
-  padding-top: 5rem;
-  gap: 8rem;
-}
-
-/* === Títulos Digital / Solution === */
-.hero__title {
-  font-family: 'Gallery Modern', serif;
-  /* font-size: 10rem; */
-  font-weight: 400;
-  height: 100px;
-  margin: 0;
-  color: #121212;
-  line-height: 1.1;
-  flex-grow: 1;
-}
-
-/* === Conteúdo da direita === */
-.hero__right {
-  flex: 1 1 50%;
-  max-width: 520px;
-  text-align: end;
-}
-
-.hero__description {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  color: #121212;
-  line-height: 1.6;
-  text-transform: capitalize;
-  text-align: end;
-  text-align: left;
-  margin-bottom: 1rem;
-}
-
-.hero__button {
-  padding: 0.3rem .5rem;
-  background-color: unset;
-  color: black;
-  border-bottom: 2px solid black;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 0;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  text-transform: capitalize;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* === Reviews === */
-.hero__reviews {
-  position: absolute;
-  right: 0;
-  top: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-  /* display: none; */
-}
-
-.hero__avatars {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: 1px solid black;
-  border-radius: 2rem;
-  padding: .5rem;
-  /* display: none; */
-}
-
-.hero__avatars img {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background-color: #121212;
-}
-
-.hero__avatar-count {
-  background-color: #121212;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  font-family: 'Kanit', sans-serif;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid white;
-}
-
-.hero__rating {
-  font-size: 14px;
-  color: #121212;
-}
-
-.hero__rating strong {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-/* === WEB DESIGN badge === */
-.hero__web-design {
-  background-color: #bff747;
-  border-radius: 2rem;
-  padding: 1rem 4rem 1rem 2rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #121212;
-  display: flex;
-  align-items: center;
-  position: relative;
-  gap: 1rem;
-}
-
-.hero__emoji {
-  width: 72px;
-  height: 72px;
-  background-color: #121212;
-  border-radius: 2rem;
-  position: absolute;
-  padding: 1rem;
-  top: 0;
-  right: -5rem;
-}
-
-

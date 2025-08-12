@@ -1,5 +1,4 @@
-import "../../styles/Workflow.scss";
-
+import '../../styles/Workflow.scss';
 
 export const Workflow = () => {
     return (

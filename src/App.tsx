@@ -1,4 +1,7 @@
 import './App.css';
+
+import '../src/styles/main.scss';
+
 import { useState } from 'react';
 import { Header } from './features/common/components/header';
 import { Modal } from './features/common/components/modal';

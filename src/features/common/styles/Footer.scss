@@ -1,147 +1,145 @@
-
-
 .footer {
-  background-color: white;
-  
-  padding: 80px 0 40px;
-  color: white;
-  position: relative;
-  font-family: 'DM Sans', sans-serif;
+    padding: 80px 0 40px;
+    background-color: $white;
+    color: $white;
+    position: relative;
+    font-family: 'DM Sans', sans-serif;
+
+    &__cta {
+        padding: $spacing-xl $spacing-lg;
+        background-color: $title-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+
+    &__cta-texts {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 877px;
+    }
+
+    &__title {
+        font-size: $font-size-hero;
+        font-family: 'Gallery Modern', serif;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 1;
+        margin: 2rem 0 0;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 26px;
+        color: white;
+    }
+
+    &__cta-button-circle {
+        width: 9.5rem;
+        height: 9.5rem;
+
+        border-radius: $border-radius-circle;
+        font-size: $font-size-default;
+        background-color: $primary-color-1;
+        color: $title-color;
+        border: none;
+        font-size: $font-size-md;
+        font-family: $font-default;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: lighten($primary-color-1, 10%);
+        }
+    }
+
+    &__cta-button-circle:hover {
+        background-color: #d8ff7e;
+    }
+
+    &__cta-icon {
+        font-family: 'Font Awesome 6 Pro', sans-serif;
+        font-weight: 900;
+    }
+
+    &__divider {
+        height: 2px;
+        background-color: $border-color;
+        margin: 60px 0 40px;
+        display: none;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        padding: 0 60px;
+        gap: 30px;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+        border-bottom: 1px solid rgb(204, 204, 204);
+        padding: 1.5rem 0;
+    }
+
+    &__links-left,
+    &__links-right {
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+    }
+
+    &__links a {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        line-height: 26px;
+        text-decoration: none;
+    }
+
+    &__links a,
+    &__copyright,
+    &__socials a {
+        color: $title-color;
+    }
+
+    &__bottom-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__socials a {
+        font-size: $font-size-default;
+        font-family: 'Font Awesome 6 Brands', sans-serif;
+    }
+
+    &__copyright {
+        font-size: $font-size-default;
+        font-weight: 400;
+        line-height: 26px;
+    }
 }
-
-/* CTA */
-.footer__cta {
-  padding: 3rem 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #121212;
-  gap: 60px;
-  flex-wrap: wrap;
-  margin-bottom: 60px;
-}
-
-.footer__cta-texts {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 877px;
-}
-
-.footer__title {
-  font-size: 100px;
-  font-family: 'Gallery Modern', serif;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 1;
-  margin: 2rem 0 0;
-}
-
-.footer__subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  text-transform: capitalize;
-  line-height: 26px;
-  color: white;
-}
-
-.footer__cta-button-circle {
-  width: 152px;
-  height: 152px;
-  border-radius: 9999px;
-  background-color: #bff747;
-  border: none;
-  color: #121212;
-  font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.footer__cta-button-circle:hover {
-  background-color: #d8ff7e;
-}
-
-.footer__cta-icon {
-  font-family: 'Font Awesome 6 Pro', sans-serif;
-  font-weight: 900;
-}
-
-/* Divider line */
-.footer__divider {
-  height: 2px;
-  background-color: #d8dde1;
-  margin: 60px 0 40px;
-  display: none;
-}
-
-/* Bottom section */
-.footer__bottom {
-  display: flex;
-  flex-direction: column;
-    padding: 0 60px;
-
-  gap: 30px;
-}
-
-/* Links section */
-.footer__links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
-  border-bottom: 1px solid rgb(204, 204, 204);
-  padding: 1.5rem 0;
-}
-
-.footer__links-left,
-.footer__links-right {
-  display: flex;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.footer__links a {
-  color: #121212;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: capitalize;
-  line-height: 26px;
-  text-decoration: none;
-}
-
-/* Socials + Copyright */
-.footer__bottom-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.footer__socials {
-  display: flex;
-  gap: 20px;
-}
-
-.footer__socials a {
-  color: #121212;
-  font-size: 16px;
-  font-family: 'Font Awesome 6 Brands', sans-serif;
-}
-
-.footer__copyright {
-  font-size: 16px;
-  font-weight: 400;
-  color: #121212;
-  line-height: 26px;
-}
-
-

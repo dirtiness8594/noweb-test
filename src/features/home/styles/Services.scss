@@ -53,7 +53,7 @@
 }
 
 .services__card--active {
-  border: 1px solid #c4ff33;
+  border: 1px solid $primary-color-1;
 }
 
 .services__category {
@@ -95,7 +95,7 @@
 }
 
 .services__button--active {
-  background-color: #c4ff33;
+  background-color: $primary-color-1;
   border: none;
 }
 

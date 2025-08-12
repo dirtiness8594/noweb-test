@@ -1,4 +1,4 @@
-import "../../styles/Difference.scss";
+import '../../styles/Difference.scss';
 
 export const Difference = () => {
     return (
