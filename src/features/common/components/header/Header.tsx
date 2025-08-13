@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import '../../styles/Header.scss';
 import { MenuItem } from './components/MenuItem';
 
@@ -13,18 +14,21 @@ type MenuItem = {
 };
 
 type MenuItemType = {
-  label: string;
-  href: string;
-  subPages?: { label: string; href: string }[];
+    label: string;
+    href: string;
+    subPages?: { label: string; href: string }[];
 };
 
 const menuItems: MenuItem[] = [
-    { label: 'Home', href: '/',  subPages: [
+    {
+        label: 'Home', href: '/', subPages: [
             { label: 'Home', href: '/' }
-        ],},
+        ],
+    },
     { label: 'About Us', href: '/about' },
-    { label: 'Portfolio', href: '/portfolio',
-         subPages: [
+    {
+        label: 'Portfolio', href: '/portfolio',
+        subPages: [
             { label: 'Projects', href: '/pages/projects' },
             { label: 'Main', href: '/pages/main' },
         ],
@@ -57,7 +61,7 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
         <nav className="header">
             <div className="header__container">
                 <div className="header__logo">
-                    <img src="/logo.png" alt="Logo" />
+                    <img src="/header/logo.png" alt="Logo" />
                 </div>
                 <ul className="header__menu">
                     {menuItems.map(item => (
