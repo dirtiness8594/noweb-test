@@ -17,7 +17,7 @@ export const WorkflowStep = ({ number, title, description, iconSrc }: WorkflowSt
             </div>
             <h3 className="workflow__step-title">{title}</h3>
             <p className="workflow__step-text">
-                {description.split('\n').map((line, i) => (
+                {description.split("\n").map((line, i) => (
                     <span key={i}>
                         {line}
                         <br />

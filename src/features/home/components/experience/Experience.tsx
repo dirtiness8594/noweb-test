@@ -1,9 +1,8 @@
-import '../../styles/Experience.scss';
+import "../../styles/Experience.scss";
 
-import { ExperienceBlock } from './components/ExperienceBlock';
+import { ExperienceBlock } from "./components/ExperienceBlock";
 
 export const Experience = () => {
-
     const text1 =
         "Established in 1995, NEXIN has been a leading force in the digital landscape for over two decades. We're a passionate team of designers.";
 
@@ -29,7 +28,9 @@ export const Experience = () => {
                 </div>
                 <div className="experience__brands">
                     <div className="experience__brands-wrapper">
-                        <p className="experience__brands-title">We Worked With Global Largest Brands</p>
+                        <p className="experience__brands-title">
+                            We Worked With Global Largest Brands
+                        </p>
                     </div>
                     <div className="experience__logos">
                         <img src="/experience/partner1.png" alt="Tech Logo 1" />

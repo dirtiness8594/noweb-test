@@ -1,12 +1,12 @@
-import '../../styles/Stats.scss';
+import "../../styles/Stats.scss";
 
-import { StatItem } from './components/StatItem';
+import { StatItem } from "./components/StatItem";
 
 const statsData = [
-    { number: '35k+', label: 'Project\nComplete' },
-    { number: '10k+', label: 'Happy\nCustomers' },
-    { number: '25+', label: 'Years\nExperiences' },
-    { number: '88', label: 'Awards\nAchievement' },
+    { number: "35k+", label: "Project\nComplete" },
+    { number: "10k+", label: "Happy\nCustomers" },
+    { number: "25+", label: "Years\nExperiences" },
+    { number: "88", label: "Awards\nAchievement" },
 ];
 
 export const Stat = () => {

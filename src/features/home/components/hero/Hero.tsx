@@ -1,11 +1,11 @@
-import '../../styles/Hero.scss';
+import "../../styles/Hero.scss";
 
-import { HeroTag } from './components/HeroTag';
-import { HeroTitleImage } from './components/HeroTitleImage';
-import { HeroDescription } from './components/HeroDescription';
-import { HeroCTAButton } from './components/HeroCTAButton';
-import { HeroReviews } from './components/HeroReviews';
-import { HeroWebDesignBadge } from './components/HeroWebDesignBadge';
+import { HeroTag } from "./components/HeroTag";
+import { HeroTitleImage } from "./components/HeroTitleImage";
+import { HeroDescription } from "./components/HeroDescription";
+import { HeroCTAButton } from "./components/HeroCTAButton";
+import { HeroReviews } from "./components/HeroReviews";
+import { HeroWebDesignBadge } from "./components/HeroWebDesignBadge";
 
 export const Hero = () => {
     return (

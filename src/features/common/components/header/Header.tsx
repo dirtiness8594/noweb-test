@@ -1,7 +1,7 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-import '../../styles/Header.scss';
-import { MenuItem } from './components/MenuItem';
+import "../../styles/Header.scss";
+import { MenuItem } from "./components/MenuItem";
 
 type HeaderProps = {
     onOpenModal: () => void;
@@ -21,40 +21,40 @@ type MenuItemType = {
 
 const menuItems: MenuItem[] = [
     {
-        label: 'Home', href: '/', subPages: [
-            { label: 'Home', href: '/' }
-        ],
+        label: "Home",
+        href: "/",
+        subPages: [{ label: "Home", href: "/" }],
     },
-    { label: 'About Us', href: '/about' },
+    { label: "About Us", href: "/about" },
     {
-        label: 'Portfolio', href: '/portfolio',
+        label: "Portfolio",
+        href: "/portfolio",
         subPages: [
-            { label: 'Projects', href: '/pages/projects' },
-            { label: 'Main', href: '/pages/main' },
-        ],
-    },
-    {
-        label: 'Pages',
-        href: '/pages',
-        subPages: [
-            { label: 'Team', href: '/pages/team' },
-            { label: 'FAQ', href: '/pages/faq' },
-            { label: 'Pricing', href: '/pages/pricing' },
+            { label: "Projects", href: "/pages/projects" },
+            { label: "Main", href: "/pages/main" },
         ],
     },
     {
-        label: 'Blog',
-        href: '/blog',
+        label: "Pages",
+        href: "/pages",
         subPages: [
-            { label: 'Latest Posts', href: '/blog/latest' },
-            { label: 'Categories', href: '/blog/categories' },
+            { label: "Team", href: "/pages/team" },
+            { label: "FAQ", href: "/pages/faq" },
+            { label: "Pricing", href: "/pages/pricing" },
         ],
     },
-    { label: 'Contact Us', href: '/contact' },
+    {
+        label: "Blog",
+        href: "/blog",
+        subPages: [
+            { label: "Latest Posts", href: "/blog/latest" },
+            { label: "Categories", href: "/blog/categories" },
+        ],
+    },
+    { label: "Contact Us", href: "/contact" },
 ];
 
 export const Header = ({ onOpenModal }: HeaderProps) => {
-
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
@@ -96,7 +96,7 @@ export const Header = ({ onOpenModal }: HeaderProps) => {
                         </button>
 
                         <ul className="mobile-menu__list">
-                            {menuItems.map((item) => (
+                            {menuItems.map(item => (
                                 <MobileMenuItem key={item.label} item={item} />
                             ))}
                         </ul>
@@ -132,7 +132,16 @@ const QuoteIcon = () => (
 );
 
 const HamburgerIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" >
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        stroke="#000"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+    >
         <line x1="3" y1="6" x2="21" y2="6" />
         <line x1="3" y1="12" x2="21" y2="12" />
         <line x1="3" y1="18" x2="21" y2="18" />
@@ -152,11 +161,11 @@ const MobileMenuItem = ({ item }: { item: MenuItemType }) => {
                         aria-expanded={open}
                     >
                         {item.label}
-                        <span className={`mobile-menu__arrow ${open ? 'open' : ''}`}>▸</span>
+                        <span className={`mobile-menu__arrow ${open ? "open" : ""}`}>▸</span>
                     </button>
                     {open && (
                         <ul className="mobile-menu__sublist">
-                            {item.subPages.map((sub) => (
+                            {item.subPages.map(sub => (
                                 <li key={sub.label} className="mobile-menu__subitem">
                                     <a href={sub.href}>{sub.label}</a>
                                 </li>

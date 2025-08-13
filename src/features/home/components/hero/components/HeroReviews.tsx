@@ -1,4 +1,4 @@
-import { HeroAvatars } from './HeroAvatars';
+import { HeroAvatars } from "./HeroAvatars";
 
 export const HeroReviews = () => (
     <div className="hero__reviews">

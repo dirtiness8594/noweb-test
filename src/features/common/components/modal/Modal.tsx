@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../../styles/Modal.scss';
+import React, { useState } from "react";
+import "../../styles/Modal.scss";
 
 type ModalProps = {
     isOpen: boolean;
@@ -18,17 +18,17 @@ interface CepData {
 export function Modal({ isOpen, onClose }: ModalProps) {
     if (!isOpen) return null;
 
-    console.log('Open ', isOpen);
-    const [cep, setCep] = useState<string>('');
+    console.log("Open ", isOpen);
+    const [cep, setCep] = useState<string>("");
     const [data, setData] = useState<CepData | null>(null);
-    const [error, setError] = useState<string>('');
+    const [error, setError] = useState<string>("");
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        const sanitizedCep = cep.replace(/\D/g, '');
+        const sanitizedCep = cep.replace(/\D/g, "");
         if (sanitizedCep.length !== 8) {
-            setError('Digite um CEP válido com 8 dígitos.');
+            setError("Digite um CEP válido com 8 dígitos.");
             setData(null);
             return;
         }
@@ -38,14 +38,14 @@ export function Modal({ isOpen, onClose }: ModalProps) {
             const result: CepData = await response.json();
 
             if (result.erro) {
-                setError('CEP não encontrado.');
+                setError("CEP não encontrado.");
                 setData(null);
             } else {
-                setError('');
+                setError("");
                 setData(result);
             }
         } catch {
-            setError('Erro ao buscar o CEP.');
+            setError("Erro ao buscar o CEP.");
             setData(null);
         }
     };
@@ -53,10 +53,13 @@ export function Modal({ isOpen, onClose }: ModalProps) {
     return (
         <div className="modal__overlay">
             <div className="modal__box">
-                <button className="modal__button" onClick={onClose}>Fechar</button>
+                <button className="modal__button" onClick={onClose}>
+                    Fechar
+                </button>
                 <h2 className="modal__title">Buscar CEP</h2>
                 <p className="modal__info">
-                    Para fazer nova consulta, basta preencher novamente o campo abaixo e pressionar Buscar.
+                    Para fazer nova consulta, basta preencher novamente o campo abaixo e pressionar
+                    Buscar.
                 </p>
                 <form onSubmit={handleSubmit} className="modal__form">
                     <input

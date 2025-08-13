@@ -1,6 +1,6 @@
-import '../../styles/Difference.scss';
-import { Feature } from './components/Feature';
-import { TextBlock } from './components/TextBlock';
+import "../../styles/Difference.scss";
+import { Feature } from "./components/Feature";
+import { TextBlock } from "./components/TextBlock";
 
 export const Difference = () => {
     return (
@@ -8,16 +8,24 @@ export const Difference = () => {
             <div className="difference__container">
                 <div className="difference__left">
                     <div className="difference__label-group">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="16"
+                            viewBox="0 0 24 16"
+                            fill="none"
+                        >
                             <circle cx="8" cy="8" r="8" fill="#121212" />
                             <circle cx="16" cy="8" r="7.5" stroke="#FF6633" />
                         </svg>
                         <span className="difference__label">WHAT SETS US APART</span>
                     </div>
-                    <h2 className="difference__title">Driving Digital Success with Strategy Design</h2>
+                    <h2 className="difference__title">
+                        Driving Digital Success with Strategy Design
+                    </h2>
                     <p className="difference__text">
-                        We believe that the surest measure of success is when our partners with us more
-                        than half. It's more than just the visuals.
+                        We believe that the surest measure of success is when our partners with us
+                        more than half. It's more than just the visuals.
                     </p>
                     <img
                         className="difference__image-main"
@@ -27,15 +35,19 @@ export const Difference = () => {
                 </div>
                 <div className="difference__right">
                     <div className="difference__top">
-                        <img className="difference__image-small" src="/difference/secundary.png" alt="Meeting room" />
+                        <img
+                            className="difference__image-small"
+                            src="/difference/secundary.png"
+                            alt="Meeting room"
+                        />
                         <p className="difference__text-small">
-                            We believe that the surest measure of success is when our partners with us
-                            more than half It's more than just the visuals. We're here to support your
-                            growth.
+                            We believe that the surest measure of success is when our partners with
+                            us more than half It's more than just the visuals. We're here to support
+                            your growth.
                             <br />
                             <br />
-                            We believe that the surest measure of success is when our partners with us
-                            more than half It's more than just the visuals.
+                            We believe that the surest measure of success is when our partners with
+                            us more than half It's more than just the visuals.
                         </p>
                     </div>
                     <div className="difference__middle">

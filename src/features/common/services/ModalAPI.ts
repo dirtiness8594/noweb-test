@@ -10,17 +10,17 @@ export interface CepData {
 const baseUrl = import.meta.env.VITE_API_BASE_URL;
 
 export async function fetchCep(cep: string): Promise<CepData> {
-    const sanitizedCep = cep.replace(/\D/g, '');
+    const sanitizedCep = cep.replace(/\D/g, "");
 
     if (sanitizedCep.length !== 8) {
-        throw new Error('Digite um CEP válido com 8 dígitos.');
+        throw new Error("Digite um CEP válido com 8 dígitos.");
     }
 
     const response = await fetch(`${baseUrl}/${sanitizedCep}/json/`);
     const result: CepData = await response.json();
 
     if (result.erro) {
-        throw new Error('CEP não encontrado.');
+        throw new Error("CEP não encontrado.");
     }
 
     return result;
