@@ -7,19 +7,19 @@ const steps = [
         number: '01',
         title: 'Research and Strategy',
         description: `Conduct thorough market of the research to the fast target audience behaviors.\nSubmit as many design tasks`,
-        iconSrc: '/I4.png',
+        iconSrc: '/icons/icon4.png',
     },
     {
         number: '02',
         title: 'Plan Customization',
         description: `Conduct thorough market of the research to the fast target audience behaviors.\nSubmit as many design tasks`,
-        iconSrc: '/I5.png',
+        iconSrc: '/icons/icon5.png',
     },
     {
         number: '03',
         title: 'Finished & User Testing',
         description: `Conduct thorough market of the research to the fast target audience behaviors.\nSubmit as many design tasks`,
-        iconSrc: '/I6.png',
+        iconSrc: '/icons/icon6.png',
     },
 ];
 

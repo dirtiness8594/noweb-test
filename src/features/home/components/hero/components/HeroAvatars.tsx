@@ -1,4 +1,4 @@
-const avatarList = ["/avatar1.png", "/avatar2.png", "/avatar3.png"];
+const avatarList = ["/hero/avatar1.png", "/hero/avatar2.png", "/hero/avatar3.png"];
 
 export const HeroAvatars = () => (
     <div className="hero__avatars">

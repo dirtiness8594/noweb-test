@@ -14,23 +14,20 @@ export const Difference = () => {
                         </svg>
                         <span className="difference__label">WHAT SETS US APART</span>
                     </div>
-
                     <h2 className="difference__title">Driving Digital Success with Strategy Design</h2>
-
                     <p className="difference__text">
                         We believe that the surest measure of success is when our partners with us more
                         than half. It's more than just the visuals.
                     </p>
-
                     <img
                         className="difference__image-main"
-                        src="/D1.png"
+                        src="/difference/main.png"
                         alt="People collaborating on laptop"
                     />
                 </div>
                 <div className="difference__right">
                     <div className="difference__top">
-                        <img className="difference__image-small" src="/D2.png" alt="Meeting room" />
+                        <img className="difference__image-small" src="/difference/secundary.png" alt="Meeting room" />
                         <p className="difference__text-small">
                             We believe that the surest measure of success is when our partners with us
                             more than half It's more than just the visuals. We're here to support your
@@ -41,31 +38,27 @@ export const Difference = () => {
                             more than half It's more than just the visuals.
                         </p>
                     </div>
-
                     <div className="difference__middle">
                         <p className="difference__text-block">
                             Conduct thorough market research to the fast target audience behaviours.
                             Submit as many design tasks
                         </p>
-
                         <TextBlock title="Our Mission">
                             Conduct thorough market research to the fast target audience behaviours.
                         </TextBlock>
                     </div>
-
                     <div className="difference__bottom">
                         <button className="difference__button">
                             Contact Us <span className="difference__icon">➜</span>
                         </button>
-
                         <div className="difference__features">
                             <Feature
-                                src="/D3.png"
+                                src="/difference/bubble1.png"
                                 alt="Marketing Strategy"
                                 label="Marketing Strategy"
                             />
                             <Feature
-                                src="/D4.png"
+                                src="/difference/bubble2.png"
                                 alt="UX/UI Solution"
                                 label={
                                     <>

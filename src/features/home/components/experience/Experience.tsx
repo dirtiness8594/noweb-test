@@ -32,11 +32,11 @@ export const Experience = () => {
                         <p className="experience__brands-title">We Worked With Global Largest Brands</p>
                     </div>
                     <div className="experience__logos">
-                        <img src="/L1.png" alt="Tech Logo 1" />
-                        <img src="/L2.png" alt="Technology Logo 2" />
-                        <img src="/L3.png" alt="Technology Logo 3" />
-                        <img src="/L4.png" alt="Technology Logo 4" />
-                        <img src="/L5.png" alt="System Logo 5" />
+                        <img src="/experience/partner1.png" alt="Tech Logo 1" />
+                        <img src="/experience/partner2.png" alt="Technology Logo 2" />
+                        <img src="/experience/partner3.png" alt="Technology Logo 3" />
+                        <img src="/experience/partner4.png" alt="Technology Logo 4" />
+                        <img src="/experience/partner5.png" alt="System Logo 5" />
                     </div>
                 </div>
             </div>

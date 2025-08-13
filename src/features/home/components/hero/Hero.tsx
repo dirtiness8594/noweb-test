@@ -14,9 +14,9 @@ export const Hero = () => {
                 <HeroTag />
                 <div className="hero__row hero__row--middle">
                     <div className="hero__left">
-                        <HeroTitleImage src="/Digital.png" alt="Digital Services" />
+                        <HeroTitleImage src="/hero/digital.png" alt="Digital Services" />
                         <div className="hero__left__mobile">
-                            <HeroTitleImage src="/Solution.png" alt="Creative Solutions" />
+                            <HeroTitleImage src="/hero/solution.png" alt="Creative Solutions" />
                         </div>
                     </div>
                     <div className="hero__right">
@@ -28,11 +28,11 @@ export const Hero = () => {
                 <div className="hero__row hero__row--bottom">
                     <HeroWebDesignBadge />
                     <div className="hero__right">
-                        <HeroTitleImage src="/Solution.png" alt="Creative Solutions" />
+                        <HeroTitleImage src="/hero/solution.png" alt="Creative Solutions" />
                     </div>
                 </div>
             </div>
-            <img className="hero__banner" src="/herooo.png" alt="Hero Banner" />
+            <img className="hero__banner" src="/hero/herobottom.png" alt="Hero Banner" />
         </section>
     );
 };
