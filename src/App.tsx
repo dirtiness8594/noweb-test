@@ -9,7 +9,6 @@ import { Footer } from "./features/common/components/footer";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./features/home/Home";
-
 function App() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
